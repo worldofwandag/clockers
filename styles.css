@@ -1,56 +1,53 @@
 #clock {
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
-    border: solid 1px gray;
-    background-color: aliceblue;
-    position: relative;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  border: solid 1px darkslategray;
+  position: relative;
 }
 
 .number {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    text-align: center;
-    transform: rotate(0deg);
-    font-size: 24px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  transform: rotate(0deg);
+  font-size: 24px;
 }
 
 .handle {
-    position: absolute;
-    height: 150px;
-    width: 4px;
-    background-color: black;
-    left: 50%;
-    bottom: 50%;
-    transform: translateX(-50%);
-    transform-origin: bottom;
-    border-radius: 20%;
+  height: 100px;
+  width: 4px;
+  position: absolute;
+  background-color: black;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: bottom;
+  transform: translateX(-50%) rotate(30deg);
 }
 
 .handle__millis {
-    height: 150px;
-    width: 2px;
-    background-color: goldenrod;
+  height: 100px;
+  width: 1px;
+  background-color: gray;
 }
 
 .handle__second {
-    height: 200px;
-    width: 1px;
-    background-color: red;
-    transform: rotate(30deg);
+  height: 200px;
+  width: 1px;
+  background-color: red;
 }
 
 .handle__minute {
-    height: 175px;
-    width: 2px;
-    transform: rotate(60deg);
+  height: 175px;
+  width: 2px;  
 }
 
 .handle__hour {
-    height: 125px;
-    width: 8px;
+  height: 150px;
+  width: 4px;
 }
 
 .number:nth-of-type(1) {
@@ -86,9 +83,3 @@
 .number:nth-of-type(11) {
     transform: rotate(330deg);
 }
-
-
-
-
-
-
